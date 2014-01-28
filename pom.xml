@@ -8,6 +8,11 @@
 	<groupId>com.mrprez</groupId>
 	<version>1.0-SNAPSHOT</version>
 	
+	<scm>
+		<connection>scm:svn:https://github.com/mrprez/mrprez</connection>
+		<developerConnection>scm:svn:https://github.com/mrprez/mrprez</developerConnection>
+	</scm>
+	
 	<repositories>
 		<repository>
 			<id>MrPrezDeployRepo</id>
