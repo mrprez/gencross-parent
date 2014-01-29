@@ -9,8 +9,8 @@
 	<version>1.0-SNAPSHOT</version>
 	
 	<scm>
-		<connection>scm:svn:https://github.com/mrprez/mrprez</connection>
-		<developerConnection>scm:svn:https://github.com/mrprez/mrprez</developerConnection>
+		<connection>scm:git:git://github.com/mrprez/mrprez.git</connection>
+		<developerConnection>scm:git:git://github.com/mrprez/mrprez.git</developerConnection>
 	</scm>
 	
 	<repositories>
