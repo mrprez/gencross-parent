@@ -18,6 +18,13 @@
 		<repository>
 			<id>MrPrezDeployRepo</id>
 			<url>http://localhost:8080/nexus/content/repositories/releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>MrPrezDeploySnapshot</id>
+			<url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
