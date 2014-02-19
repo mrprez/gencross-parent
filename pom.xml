@@ -26,6 +26,10 @@
 			<id>MrPrezDeploySnapshot</id>
 			<url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
 		</repository>
+		<repository>
+			<id>MrPrezThirdParty</id>
+			<url>http://localhost:8080/nexus/content/repositories/thirdparty/</url>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
