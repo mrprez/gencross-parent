@@ -43,11 +43,11 @@
 	<distributionManagement>
 		<repository>
 			<id>MrPrezDeployRepo</id>
-			<url>http://localhost:8080/nexus/content/repositories/releases/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>MrPrezDeploySnapshot</id>
-			<url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
