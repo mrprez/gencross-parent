@@ -17,24 +17,24 @@
 	<repositories>
 		<repository>
 			<id>MrPrezDeployRepo</id>
-			<url>http://localhost:8080/nexus/content/repositories/releases/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
 			<id>MrPrezDeploySnapshot</id>
-			<url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/snapshots/</url>
 		</repository>
 		<repository>
 			<id>MrPrezThirdParty</id>
-			<url>http://localhost:8080/nexus/content/repositories/thirdparty/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>MrPrezPluginRepo</id>
-			<url>http://localhost:8080/nexus/content/repositories/releases/</url>
+			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -61,6 +61,14 @@
 					<source>1.6</source>
 					<target>1.6</target>
 					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<argLine>-Xms512m -Xmx512m</argLine>
 				</configuration>
 			</plugin>
 		</plugins>	
