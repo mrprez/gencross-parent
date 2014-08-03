@@ -17,24 +17,24 @@
 	<repositories>
 		<repository>
 			<id>MrPrezDeployRepo</id>
-			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
 			<id>MrPrezDeploySnapshot</id>
-			<url>http://mrprez.fr/nexus/content/repositories/snapshots/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/snapshots/</url>
 		</repository>
 		<repository>
 			<id>MrPrezThirdParty</id>
-			<url>http://mrprez.fr/nexus/content/repositories/thirdparty/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>MrPrezPluginRepo</id>
-			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -43,11 +43,11 @@
 	<distributionManagement>
 		<repository>
 			<id>MrPrezDeployRepo</id>
-			<url>http://mrprez.fr/nexus/content/repositories/releases/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>MrPrezDeploySnapshot</id>
-			<url>http://mrprez.fr/nexus/content/repositories/snapshots/</url>
+			<url>http://www.mrprez.fr/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
