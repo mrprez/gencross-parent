@@ -6,14 +6,14 @@
 	
 	<artifactId>mrprez</artifactId>
 	<groupId>com.mrprez</groupId>
-	<version>1.4</version>
+	<version>1.5-SNAPSHOT</version>
 	
 	<!-- test push 2 -->
 
 	<scm>
 		<connection>scm:git:git://github.com/mrprez/mrprez.git</connection>
 		<developerConnection>scm:git:git@github.com:mrprez/mrprez.git</developerConnection>
-	  <tag>mrprez-1.4</tag>
+	  <tag>HEAD</tag>
   </scm>
 	
 	<repositories>
