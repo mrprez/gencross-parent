@@ -8,6 +8,8 @@
 	<groupId>com.mrprez</groupId>
 	<version>1.3-SNAPSHOT</version>
 	
+	<!-- test push -->
+
 	<scm>
 		<connection>scm:git:git://github.com/mrprez/mrprez.git</connection>
 		<developerConnection>scm:git:ssh://github.com/mrprez/mrprez.git</developerConnection>
