@@ -1,7 +1,7 @@
 
 name: Java CI with Maven
 
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -10,9 +10,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
+    - name: Set up JDK 1.8 for Shared Runner
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+        server-id: github
+        settings-path: ${{ github.workspace }}
+
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      env:
+        GITHUB_TOKEN: ${{ github.token }}

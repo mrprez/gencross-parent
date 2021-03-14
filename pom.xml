@@ -10,13 +10,19 @@
 	<groupId>com.mrprez.gencross</groupId>
 	<version>1.5-SNAPSHOT</version>
 
-	<!-- test push 2 -->
-
 	<scm>
 		<connection>scm:git:git://github.com/mrprez/gencross-parent.git</connection>
 		<developerConnection>scm:git:git@github.com:mrprez/gencross-parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub mrprez Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/mrprez/gencross-parent</url>
+		</repository>
+	</distributionManagement>
 
 
 	<build>
