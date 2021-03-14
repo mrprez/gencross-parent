@@ -1,58 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<packaging>pom</packaging>
-	
-	<artifactId>mrprez</artifactId>
-	<groupId>com.mrprez</groupId>
+
+	<artifactId>parent</artifactId>
+	<groupId>com.mrprez.gencross</groupId>
 	<version>1.5-SNAPSHOT</version>
-	
+
 	<!-- test push 2 -->
 
 	<scm>
-		<connection>scm:git:git://github.com/mrprez/mrprez.git</connection>
-		<developerConnection>scm:git:git@github.com:mrprez/mrprez.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
-	
-	<repositories>
-		<repository>
-			<id>MrPrezDeployRepo</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>MrPrezDeploySnapshot</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/snapshots/</url>
-		</repository>
-		<repository>
-			<id>MrPrezThirdParty</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/thirdparty/</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>MrPrezPluginRepo</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
-	<distributionManagement>
-		<repository>
-			<id>MrPrezDeployRepo</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>MrPrezDeploySnapshot</id>
-			<url>http://www.mrprez.fr/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-	
+		<connection>scm:git:git://github.com/mrprez/gencross-parent.git</connection>
+		<developerConnection>scm:git:git@github.com:mrprez/gencross-parent.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -61,8 +27,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>2.5.1</version>
 					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
+						<source>1.8</source>
+						<target>1.8</target>
 						<encoding>UTF-8</encoding>
 					</configuration>
 				</plugin>
@@ -74,9 +40,41 @@
 						<argLine>-Xms256m -Xmx1024m -XX:MaxPermSize=512m</argLine>
 					</configuration>
 				</plugin>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.apache.maven.plugins
+										</groupId>
+										<artifactId>
+											maven-plugin-plugin
+										</artifactId>
+										<versionRange>
+											[3.2,)
+										</versionRange>
+										<goals>
+											<goal>descriptor</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
-	
-	
+
+
 </project>
